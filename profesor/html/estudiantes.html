@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Estudiantes · Habilidades Blandas</title>
+<link rel="stylesheet" href="../../shared/css/base.css"><link rel="stylesheet" href="../css/profesor.css">
+</head>
+<body class="guarda" data-vista="estudiantes">
+<header class="top"><a class="logo" href="principal.html"><span class="logo-mark"><img data-img="../../shared/img/logo" alt="Fundación Luz de Esperanza"><b>HB</b></span><span>Habilidades<br>Blandas</span></a><button class="menu-btn" aria-label="Abrir menú" aria-expanded="false">☰</button><nav><a href="principal.html">Panel</a><a href="estudiantes.html" aria-current=page>Estudiantes</a><a href="matriculas.html">Matrículas</a><a href="evaluaciones.html">Evaluaciones</a><a href="calificaciones.html">Calificaciones</a><a href="descargas.html">Descargas</a><span class="user" data-usuario></span><a class="btn-sm" href="../../auth/html/login.html" data-logout>Salir</a></nav></header>
+<main class="main contenedor"><h1>Estudiantes</h1><p>Inscribe estudiantes uno por uno o con un archivo de Excel. Después los matriculas en los cursos.</p><section class="tarjeta"><h2>Matricular al crear (opcional)</h2><p class="meta">Marca los cursos en los que quedarán matriculados los estudiantes que crees o importes ahora.</p><div id="cursos-nuevos" class="chks"></div></section><section class="tarjeta"><h2>Agregar un estudiante</h2><form id="form-nuevo" class="form-grid"><div><label for="n1">Nombre completo</label><input id="n1" name="nombre" required></div><div><label for="n2">Cédula</label><input id="n2" name="cedula" inputmode="numeric" required></div><div><label for="n3">Correo (opcional)</label><input id="n3" name="correo" type="email"></div><div><label for="n4">Contraseña inicial</label><input id="n4" name="clave" placeholder="Vacía = la cédula"></div><div><button class="btn" type="submit">Crear estudiante</button></div></form></section><section class="tarjeta"><h2>Importar desde Excel o CSV</h2><p class="meta">Columnas: nombre, cedula, correo y clave (opcional). Sin clave, la contraseña inicial es la cédula.</p><div class="acciones"><button type="button" id="plantilla" class="btn btn-claro">Descargar plantilla</button><input type="file" id="archivo" accept=".xlsx,.xls,.csv" aria-label="Archivo de estudiantes"></div><p id="prev" class="meta"></p><button id="importar" class="btn" disabled>Importar estudiantes</button></section><p id="resultado" class="aviso-info" role="status">Aquí verás el resultado de cada creación.</p><section class="tarjeta"><h2>Estudiantes inscritos (<span id="total-est">0</span>)</h2><input id="buscar" type="search" placeholder="Buscar por nombre o cédula" aria-label="Buscar estudiante"><div class="scroll-x" id="tabla-est"></div></section><div id="vista"></div></main>
+<footer class="foot">© 2026 Plataforma de Habilidades Blandas · Fundación Luz de Esperanza · Multimedia y Web</footer>
+<script src="../../shared/js/config.js"></script>
+<script src="../../shared/js/datos.js"></script>
+<script src="../../shared/js/main.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+<script src="../../shared/js/profesor.js"></script>
+</body>
+</html>

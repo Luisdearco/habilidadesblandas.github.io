@@ -1,0 +1,5 @@
+.panel{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1rem;margin:1.2rem 0}
+.dato{background:#eaf3ff;border-radius:.8rem;padding:1.1rem}
+.dato b{display:block;font-size:1.8rem;color:var(--marino)}
+.top{background:#2b6cb0}
+.insignia{background:var(--marino);color:#fff;border-radius:2rem;padding:.1rem .7rem;font-size:.75rem}

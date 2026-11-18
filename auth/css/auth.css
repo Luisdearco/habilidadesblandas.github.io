@@ -1,0 +1,13 @@
+.auth{flex:1;display:grid;place-items:center;padding:2.5rem 1rem}
+.caja{background:#fff;border:1px solid var(--borde);border-radius:1rem;padding:2rem;width:100%;max-width:420px;
+  box-shadow:0 8px 24px rgba(13,13,120,.08)}
+.caja h1{font-size:1.4rem;color:var(--marino);text-align:center;margin-bottom:.3rem}
+.caja .sub{text-align:center;color:var(--suave);font-size:.9rem;margin-bottom:.8rem}
+.caja .btn{width:100%;margin-top:1.2rem}
+.enlaces{margin-top:1rem;text-align:center;font-size:.88rem;display:grid;gap:.3rem}
+.roles{display:grid;grid-template-columns:1fr 1fr;gap:.8rem;margin:1rem 0}
+.rol{border:2px solid var(--borde);border-radius:.8rem;padding:1rem;text-align:center;text-decoration:none;color:var(--texto);font-weight:600}
+.rol:hover{border-color:var(--azul);background:#eaf3ff}
+.rol span{display:block;font-size:1.8rem}
+.auth.hero-foto::after{background:linear-gradient(180deg,rgba(13,13,120,.55),rgba(59,155,240,.4))}
+.auth{padding:2rem 1rem}
