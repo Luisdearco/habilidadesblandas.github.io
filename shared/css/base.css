@@ -149,5 +149,11 @@ input[type=checkbox],input[type=radio]{width:auto}
 .flip.volteada .frente{transform:rotateY(180deg)}.flip.volteada .dorso{transform:rotateY(0)}
 .sabias{background:#fff7ef;border-left:5px solid #c25a0b;border-radius:.6rem;padding:1rem 1.2rem;position:sticky;top:1rem}
 .sabias p{margin-top:.5rem}
+/* Mejora de contraste (accesibilidad) */
+:root{--azul:#1f6fd1;--azul-fuerte:#1a5cb0}
+.top nav a:not(.btn-sm):hover{background:rgba(0,0,0,.2)}
+.dot{background:#0f766e}
+.flip .frente{background:#b34d05}
+.estado.si{color:#11663b}
 @media (max-width:800px){.repaso-grid{grid-template-columns:1fr}.sabias{position:static}}
 @media (prefers-reduced-motion:reduce){.flip .cara{transition:none}}
